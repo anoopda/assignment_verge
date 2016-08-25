@@ -48,28 +48,28 @@ margin-top: 16.155px;
 
 }
 .the_verge{
-	width:140px;
-	height:60px;
-	/*position: absolute;
-	left:60px;*/
-	float:left;
+  width:140px;
+  height:60px;
+  /*position: absolute;
+  left:60px;*/
+  float:left;
 }
 .new_articles{
 height:60px;
 width:79px;
 float:right;
     text-transform: uppercase;
- 	border-left-color: white;
+  border-left-color: white;
    border-left-style: solid;
    /*border-left: 1px;*/    
 
 }
 
 .new_articles_content {    
-	/*display: block;*/
-	    font-size: 18px;
-	margin-top:1px;
-	color: #fff;
+  /*display: block;*/
+      font-size: 18px;
+  margin-top:1px;
+  color: #fff;
   /* margin: auto;*/
    width:79px;
    height:41px;
@@ -80,7 +80,7 @@ float:right;
 }
 .new_articles_content strong{
 
-	margin-top: 2px;
+  margin-top: 2px;
     font-size: 2em;
     line-height: 0.15;
 }
@@ -124,13 +124,25 @@ float:right;
   position:relative;
 }
 
-.drop_down img{
+.drop_down_image_default{
     width: 18px;
     height: 23px;
     margin: auto;
-    margin-left: 6px;
+  /*  margin-left: 33%;*/
+     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ic_arrow_drop_down_48px.svg/2000px-Ic_arrow_drop_down_48px.svg.png");
+    background-size: cover;
+    /*z-index: 1;*/
+}
+.drop_down_image_onclick{
+  width: 18px;
+    height: 23px;
+    margin: auto;
+  /*  margin-left: 33%;*/
+     background-image: url("dropdowninverted.png");
+    background-size: cover;
 
 }
+
 
 .drop_down_list{
   display: none;
@@ -138,17 +150,32 @@ float:right;
   position:absolute;
         top: 70%;
     left: -1152%;
-    width: auto;
+     width:1148%;
   
-height: 224px;
+height: 225px;
 list-style-type: none;
 background-color: #f1f1f1;
-
+padding:0;
 }
 .drop_down_list li{
 
   display:block;
   text-decoration: none;
+      border-bottom: 1px solid #cacaca;
+    border-left: 1px solid #cacaca;
+    border-right: 1px solid #cacaca;
+    background: #fff;
+   width:100%;
+   height: 55px;
+
+  }
+  .drop_down_list li h3{
+    font-size: 2px;
+    width:100%;
+    margin:0;
+    color:#000;
+    font-size: 61%;
+
   }
 
 
@@ -427,6 +454,66 @@ background-image: url("https://cdn0.vox-cdn.com/thumbor/SEC7WFxcpWRtWLNctUA5ZpKF
     background-image: linear-gradient(135deg, #292484,#a83279);
 }
 
+.image_scroll_list h2{
+  z-index: 5;
+  position: absolute;
+      font-weight: 400;
+    line-height: 1.2;
+  color: #FFF;
+      font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  margin-left: 15px;
+  white-space: normal;
+
+
+}
+
+.image_scroll_list p{
+  margin-top: 100px;
+
+  position:relative;
+  z-index: 6;
+  width:100%;
+  padding: 0px 0px 10px 0px;
+  margin-left: 15px;
+}
+
+.p-comment-count {
+
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: inline-block;
+    text-align: center;
+    min-width: 25px;
+    padding: .4rem .2rem .2rem;
+    -webkit-font-smoothing: antialiased;
+    line-height: .7;
+    position: absolute;
+    right:7%;
+  }
+
+
+  .p-comment-count:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-color: #000;
+    border-width: 5px 7px 0 0px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+
+.heat2 {
+    background-color: #005853 !important;
+    color: #fff !important;
+}
+
+
 .scroll_image2{
 /*  position: relative;*/
 font-size: 0;
@@ -445,6 +532,287 @@ font-size: 0;
     background-image: linear-gradient(135deg, #292484,#a83279);
 
 }
+
+
+
+/*VIDEO WRAPPER  HEADER               VIDEO WRAPPER  HEADER          VIDEO WRAPPER HEADER                     VIDEO WRAPPER  HEADER              VIDEO WRAPPER*/
+
+.wrapper_video{
+  display: none;
+}
+.video_header{
+
+  width:100%;
+  height:40px;
+  padding:4px 8px 4px 8px;
+  background-color: #000;
+   
+}
+.video_header_image{
+  height:29px;
+  width: 40px;
+  float: left;
+
+}
+.video_header_caption1{
+  width:50%;
+  height:40px;
+  float: left;
+}
+
+
+
+.video_header_caption1 h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    color: #fff;
+    font-size: 16px;
+
+  }
+
+.video_header_caption1 h2 a{
+
+  color: #fa4b2a;
+
+}
+.video_header_caption2{
+    color: #fff;
+    float:right;
+    margin-top: 11px;
+
+
+}
+.video_header_caption2 i{   
+ font-style: normal;
+    color: #fa4b2a;
+}
+
+.video_header{
+  content: "";
+  clear: both;
+}
+
+/*VIDEO WRAPPER  VIDEO_LIST               VIDEO WRAPPER  VIDEO_LIST          VIDEO WRAPPER VIDEO_LIST                     VIDEO WRAPPER  VIDEO_LIST              VIDEO WRAPPER*/
+
+
+
+
+
+.video_list{
+  width:100%;
+  height:300px;
+
+
+}
+.main_video{
+  height: 300px;
+  width: 62%;
+  float: left;
+}
+
+.main_video_link_image{
+  position: relative;
+  background-image: url("https://cdn3.vox-cdn.com/thumbor/n_CAvqdG9FXmzZ3OYlgUU-263pU=/0x0:1920x1080/850x479/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50499197/vrg_1183_timn_thumb_video_01.0.0.jpg");
+  height: 300px;
+  width:100%;
+}
+
+.main_video_link_image::after{
+ background-color: #002f4b;
+    position:absolute;
+    background-image: linear-gradient(135deg, #002f4b,#417711);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+
+
+
+}
+
+.main_video_link_image img{
+        position: absolute;
+        size:50px;
+        height:50px;
+        z-index: 6;
+        top: 27%;
+        left: 47%;
+}
+
+/*VIDEO SCROLL            VIDEO SCROLL        VIDEO SCROLL          VIDEO SCROLL                      VIDEO SCROLL      VIDEO SCROLL*/
+
+
+
+
+
+
+
+.video_scroll{
+  float: left;
+  width:38%;
+  height:100%;
+
+
+}
+
+.video_scroll_elements{
+    list-style-type: none;
+    height:300px;
+    float: left;
+    width:100%;
+    padding:0;
+    margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    white-space: nowrap;
+
+
+}
+
+.video_scroll_elements_list{
+  float: left;
+display: block;
+width: 100%;
+}
+
+.video_scroll_elements_list_video{
+  width:32%;
+  height: 82px;
+  
+ float: left;
+}
+.video_scroll_elements_list_content{
+width:68%;
+height:82px;
+border-top: 1px solid #000;
+background-color: #222;
+float: left;
+}
+.video_scroll_elements_list_content h4{
+  font-size: 15px;
+  color:white;
+  font-weight: normal;
+  font-size: 0.7em;
+
+}
+
+.video_scroll_elements_list_video_link{
+  width:100%;
+
+}
+
+.video_scroll_elements_list_video_link_image{
+  position: relative;
+  background-image: url("https://cdn3.vox-cdn.com/thumbor/n_CAvqdG9FXmzZ3OYlgUU-263pU=/0x0:1920x1080/850x479/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50499197/vrg_1183_timn_thumb_video_01.0.0.jpg");
+  height: 82px;
+  width:100%;
+  background-size: cover;
+}
+
+.video_scroll_elements_list_video_link_image::after{
+/* background-color: #002f4b;*/
+    position:absolute;
+    /*background-image: linear-gradient(135deg, #002f4b,#417711);*/
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+.video_scroll_elements_list_video_link_image img{
+        position: absolute;
+        height: 39px;
+        z-index: 6;
+        top: 25%;
+        left: 25%;
+        size: 1px;
+}
+
+.video_scroll_image1{
+
+background-image: url("https://cdn3.vox-cdn.com/thumbor/n_CAvqdG9FXmzZ3OYlgUU-263pU=/0x0:1920x1080/850x479/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50499197/vrg_1183_timn_thumb_video_01.0.0.jpg");
+
+}
+.video_scroll_image2{
+
+background-image: url("https://cdn1.vox-cdn.com/thumbor/ioljoZDWEpnvcoBplJakM0eS2y8=/729x0:1773x696/300x200/cdn0.vox-cdn.com/uploads/chorus_image/image/50423283/VRG_VHO_548_Honor_8_Thumb_2.0.0.jpg");
+}
+.video_scroll_image3{
+background-image: url("https://cdn0.vox-cdn.com/thumbor/qiHBAx8l-FmLIvzPdNENjkIKUSo=/748x0:1784x691/180x120/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50414023/vrg_note_seven_thumb.0.0.jpg");
+
+}
+.video_scroll_image4{
+
+background-image: url("https://cdn0.vox-cdn.com/thumbor/oSpe1RmfMZocI3MxDxNcmhT7ino=/0x379:1051x1080/180x120/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50329689/timn_bluetooth_sport_headphones_thumb_1.0.0.jpg");
+
+}
+
+
+
+
+
+/*.video_scroll_image1::after{
+
+
+  background-color: #002f4b;
+  background-image: linear-gradient(135deg, #002f4b,#417711);
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.row1 {
+ /*position: absolute;*/
+ background-image: url("https://cdn0.vox-cdn.com/thumbor/6mOZSWPW5HsaakinZwEso_bfeZg=/156x0:697x541/350x350/cdn0.vox-cdn.com/uploads/chorus_image/image/50424055/nsa.0.jpg"); 
+background-size: cover;
+position: relative;
+/*background-color: #292484;*/
+/*background-image: linear-gradient(135deg, #292484,#dc4225);*/
+float:left;
+
+
+}
+.row2::after{   
+     background-color: #002f4b;
+    position:absolute;
+    background-image: linear-gradient(135deg, #002f4b,#417711);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             /*IMAGE2                   IMAGE2              IMAGE2                       IMAGE2                         IMAGE2 */
@@ -665,6 +1033,30 @@ display: inline-block;
 
   display: none;
  }
+
+        /*BACK TO TOP                        BACK TO TOP                          BACK TO TOP                          BACK TO TOP */
+
+.back_to_top{
+  width:100%;
+  height:25px;
+  padding:18px 0 10px 0;
+ 
+  
+
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    background-color: #555;
+    color: #FFF;
+    text-align: center;
+}
+
+
+
+
+
+
 
 
                       /*SEE NEWS                    SEE NEWS                     SEE NEWS              SEE NEWS         SEE NEWS    SEE NEWS*/
@@ -1213,6 +1605,10 @@ right:-100%;
                    .drop_down{
                     display: inline-block;
                    }
+                   .drop_down_list_display{
+                  display: block;
+                    }
+
 
                  
 
@@ -1369,4 +1765,10 @@ right:-100%;
 
 
 
+}
+
+@media only screen and (min-width: 800px){
+          .wrapper_video{
+            display: block;
+          }
 }
