@@ -19,8 +19,6 @@ body {
     color: #fff;
     font-family: "verge-font-icons";
     font-size: 24px;
-    content: '\e805';
-    text-align: center;
     line-height: 60px;
     background-color: #fa4b2a;
     float: left;
@@ -48,13 +46,10 @@ body {
 }
 
 #new_articles_content {
-    / font-size: 18px;
     margin-top: 1px;
-    color: #fff;
     width: 79px;
-    height: 41px;
-    text-align: center;
     margin-left: 25%;
+    color: white;
 }
 
 #new_articles_content strong {
@@ -86,14 +81,12 @@ body {
     font-size: 0.77rem;
     font-weight: normal;
     color: #000;
-    position: absolute;
 }
 
 
 /*DROP DOWN             DROP DOWN                        DROP DOWN          DROP DOWN                       DROP DOWN*/
 
 .drop_down {
-    height: 100%;
     width: 4%;
     background: #f0f0f0;
     border: 1px solid #ddd;
@@ -188,8 +181,6 @@ body {
     margin-top: 100px;
     position: relative;
     z-index: 6;
-    width: 100%;
-    padding: 0px 0px 10px 0px;
     margin-left: 15px;
 }
 
@@ -466,27 +457,16 @@ body {
 /*VIDEO SCROLL            VIDEO SCROLL        VIDEO SCROLL          VIDEO SCROLL                      VIDEO SCROLL      VIDEO SCROLL*/
 
 .video_scroll {
-    float: left;
-    width: 38%;
     height: 100%;
 }
 
 .video_scroll_elements {
-    list-style-type: none;
     height: 300px;
-    float: left;
-    width: 100%;
     padding: 0;
     margin: 0;
     overflow-y: scroll;
     overflow-x: hidden;
     white-space: nowrap;
-}
-
-.video_scroll_elements_list {
-    float: left;
-    display: block;
-    width: 100%;
 }
 
 .video_scroll_elements_list_video {
@@ -496,11 +476,9 @@ body {
 }
 
 .video_scroll_elements_list_content {
-    width: 68%;
     height: 82px;
     border-top: 1px solid #000;
     background-color: #222;
-    float: left;
 }
 
 .video_scroll_elements_list_content h4 {
@@ -579,7 +557,6 @@ body {
     width: 100%;
     height: 100%;
     content: '';
-
 }
 
 .scroll2_image2 {
@@ -627,7 +604,6 @@ body {
 /*SLOT LIST        SLOT LIST           SLOT LIST              SLOT LIST            SLOT LIST              SLOT LIST     SLOT LIST  */
 
 .entry_slot {
-    width: 100%;
     height: auto;
 }
 
@@ -647,12 +623,11 @@ body {
 
 .entry_slot_list_image {
     position: absolute;
-    width: 70px;
-    height: 70px;
     top: 19%;
     left: 3%;
     background-size: cover;
-    display: inline-block;
+    width: 74px;
+    height: 74px;
 }
 
 .list_image1 {
@@ -669,12 +644,6 @@ body {
 
 .list_image4 {
     background-image: url("https://cdn2.vox-cdn.com/thumbor/3MKfsd5WUJpa0UX7FjEPLuQAZUY=/341x0:1701x1360/250x250/cdn0.vox-cdn.com/uploads/chorus_image/image/50475579/jbareham_160815_1180_A_0014.0.0.jpg");
-}
-
-.entry_slot_list_content_H3 {
-    text-decoration: none;
-    color: rgb(68, 68, 68);
-    font-weight: 400;
 }
 
 .entry_slot_list_content_wrapper {
@@ -749,7 +718,6 @@ body {
 .bottom_footer {
     float: left;
     background-color: #000;
-    width: 100%;
 }
 
 .search_products {
@@ -765,16 +733,12 @@ body {
 }
 
 .left_items {
-    display: inline-block;
     float: left;
-    width: 40%;
     height: 100%;
-    list-style-type: none;
     background-color: #000;
 }
 
 .left_items li {
-  
     display: block;
     color: #444;
     font-size: 18px;
@@ -791,7 +755,6 @@ body {
 }
 
 .right_items li {
-  
     display: block;
     color: #444;
     font-size: 18px;
@@ -813,7 +776,6 @@ body {
 }
 
 .right_items_two li {
-    text-decoration: none;
     display: block;
     color: #444;
     font-size: 18px;
@@ -841,12 +803,6 @@ body {
     height: 100px;
 }
 
-.wrapper_bottom_footer_verge_logo_search_form {}
-
-.footer_child_wrapper {
-    width: 100%;
-}
-
 .footer_child_wrapper::after {
     content: "";
     clear: both;
@@ -857,7 +813,6 @@ body {
 /*FOOTER SOCIAL NETWORKING                FOOTER SOCILA NETWORKING                  FOOTER SOCIAL NETWORKING  */
 
 .social_networking_sites_plugins {
-    width: 50%;
     height: 30px;
     padding-bottom: 10px;
     list-style-type: none;
@@ -869,8 +824,6 @@ body {
 }
 
 .social_networking_sites_plugins li img {
-    text-decoration: none;
-    width: 30px;
     height: 30px;
     background-color: grey;
     margin-right: 14px;
@@ -927,8 +880,6 @@ body {
 }
 
 .animated_vertical_navbar {
-    width: 248px;
-    height: 626.719px;
     position: absolute;
     top: 0px;
     left: -274px;
@@ -962,11 +913,8 @@ body {
 }
 
 .animated_vertical_navbar ul {
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 248px;
-    height: 626.719px;
     background-color: rgba(0, 0, 0, 0.5);
     transition: width 0.4s ease-in-out;
 }
@@ -1062,7 +1010,6 @@ body {
         height: 280px;
         top: 0px;
         left: 0px;
-        */
     }
     .row2 {
         width: 50%;
@@ -1088,8 +1035,6 @@ body {
     .entry_slot_list_content_wrapper {
         position: absolute;
         margin-top: 0;
-        height: auto;
-        width: auto;
         top: -4%;
         left: 11%;
     }
@@ -1130,9 +1075,6 @@ body {
         display: inline-block;
         width: 23%;
     }
-    .left_items {
-        width: 23%;
-    }
     .right_items {
         width: 23%
     }
@@ -1156,7 +1098,6 @@ body {
     }
     .bottom_footer_verge_logo {
         display: block;
-        width: 100%;
         height: 48px;
     }
     .logosearch_bar {
@@ -1168,9 +1109,7 @@ body {
         padding-left: 0px;
     }
     .left_items {
-        display: inline-block;
         width: 19%;
-        padding-left: 8px;
     }
     .right_items {
         display: inline-block;
