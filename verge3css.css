@@ -168,7 +168,7 @@ body {
     content: '';
 }
 
-.row1 {
+.info_twitter {
     background-image: url("https://cdn0.vox-cdn.com/thumbor/6mOZSWPW5HsaakinZwEso_bfeZg=/156x0:697x541/350x350/cdn0.vox-cdn.com/uploads/chorus_image/image/50424055/nsa.0.jpg");
 }
 
@@ -190,7 +190,7 @@ body {
     margin-left: 15px;
 }
 
-.row1::after {
+.info_twitter::after {
     background-color: #292484;
     background-image: linear-gradient(135deg, #292484, #dc4225);
 }
@@ -227,20 +227,20 @@ body {
     color: #fff !important;
 }
 
-.row2 {
+.info_nexus{
     background-image: url("https://cdn0.vox-cdn.com/thumbor/_0L7sQCIMQ6lkHNBetkCfmfRAzY=/0x0:3000x1688/340x192/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50435205/GettyImages-166412919.0.jpg");
 }
 
-.row2::after {
+.info_nexus::after {
     background-color: #002f4b;
     background-image: linear-gradient(135deg, #002f4b, #417711);
 }
 
-.row3 {
+.info_intel {
     background-image: url("https://cdn0.vox-cdn.com/thumbor/SEC7WFxcpWRtWLNctUA5ZpKFilo=/0x0:2039x1147/340x192/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50434073/evga_sc17_vlad_savov.0.0.jpg");
 }
 
-.row3::after {
+.info_intel::after {
     background-color: #292484;
     background-image: linear-gradient(135deg, #292484, #a83279);
 }
@@ -278,7 +278,7 @@ body {
     font-size: 0;
 }
 
-.image_scroll_second {
+.image_scroll_repeat {
     height: 175px;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -306,7 +306,7 @@ body {
     background-image: linear-gradient(135deg, #292484, #a83279);
 }
 
-.image_scroll_list_h2 {
+.image_scroll_h2 {
     z-index: 5;
     position: absolute;
     font-weight: 400;
@@ -413,7 +413,7 @@ body {
     width: 40px;
     float: left;
 }
-.video_header  h2 {
+.video_header h2 {
     text-transform: uppercase;
     font-weight: normal;
     color: #fff;
@@ -427,25 +427,12 @@ body {
     display:block;
 
 }
-
-
-/*.video_header_caption2 {
-    color: #fff;
-    float: right;
-    margin-top: 11px;
-}
-*/
 .video_header i {
     font-style: normal;
     color: #fa4b2a;
     float: right;
     display:block;
 }
-
-
-
-
-
 /*VIDEO WRAPPER  VIDEO_LIST               VIDEO WRAPPER  VIDEO_LIST          VIDEO WRAPPER VIDEO_LIST                     VIDEO WRAPPER  VIDEO_LIST              VIDEO WRAPPER*/
 
 .video_list {
@@ -453,21 +440,19 @@ body {
     height: 300px;
     float: left;
 }
-
-.main_video {
+.current_video {
     height: 300px;
     width: 62%;
     float: left;
 }
-
-.main_video_link_image {
+.current_video_link {
     position: relative;
     background-image: url("https://cdn3.vox-cdn.com/thumbor/n_CAvqdG9FXmzZ3OYlgUU-263pU=/0x0:1920x1080/850x479/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50499197/vrg_1183_timn_thumb_video_01.0.0.jpg");
     height: 300px;
     width: 100%;
 }
 
-.main_video_link_image::after {
+.current_video_link::after {
     background-color: #002f4b;
     position: absolute;
     background-image: linear-gradient(135deg, #002f4b, #417711);
@@ -479,7 +464,7 @@ body {
     content: '';
 }
 
-.main_video_link_image img {
+.current_video_link img {
     position: absolute;
     size: 50px;
     height: 50px;
@@ -487,14 +472,11 @@ body {
     top: 27%;
     left: 47%;
 }
-
-
 /*VIDEO SCROLL            VIDEO SCROLL        VIDEO SCROLL          VIDEO SCROLL                      VIDEO SCROLL      VIDEO SCROLL*/
 
 .video_scroll {
     height: 100%;
 }
-
 .video_scroll_elements {
     height: 300px;
     padding: 0;
@@ -503,20 +485,18 @@ body {
     overflow-x: hidden;
     white-space: nowrap;
 }
-
 .video_scroll_elements_list_video {
     width: 32%;
     height: 82px;
     float: left;
 }
 
-.video_scroll_elements_list_content {
+.video_scroll_content {
     height: 82px;
     border-top: 1px solid #000;
     background-color: #222;
 }
-
-.video_scroll_elements_list_content h4 {
+.video_scroll_content h4 {
     font-size: 15px;
     color: white;
     font-weight: normal;
@@ -527,15 +507,16 @@ body {
     width: 100%;
 }
 
-.video_scroll_elements_list_video_link_image {
+.video_scroll_image {
     position: relative;
     background-image: url("https://cdn3.vox-cdn.com/thumbor/n_CAvqdG9FXmzZ3OYlgUU-263pU=/0x0:1920x1080/850x479/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50499197/vrg_1183_timn_thumb_video_01.0.0.jpg");
     height: 82px;
-    width: 100%;
+    width: 82px;
     background-size: cover;
+    float: left;
 }
 
-.video_scroll_elements_list_video_link_image::after {
+.video_scroll_image::after {
     position: absolute;
     opacity: 0.7;
     top: 0;
@@ -545,7 +526,7 @@ body {
     content: '';
 }
 
-.video_scroll_elements_list_video_link_image img {
+.video_scroll_image img {
     position: absolute;
     height: 39px;
     z-index: 6;
@@ -569,10 +550,7 @@ body {
 .video_scroll_image4 {
     background-image: url("https://cdn0.vox-cdn.com/thumbor/oSpe1RmfMZocI3MxDxNcmhT7ino=/0x379:1051x1080/180x120/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50329689/timn_bluetooth_sport_headphones_thumb_1.0.0.jpg");
 }
-
-
 /*IMAGE2                   IMAGE2              IMAGE2                       IMAGE2                         IMAGE2 */
-
 .scroll2_image1 {
     font-size: 0;
     position: relative;
@@ -681,7 +659,7 @@ body {
     background-image: url("https://cdn2.vox-cdn.com/thumbor/3MKfsd5WUJpa0UX7FjEPLuQAZUY=/341x0:1701x1360/250x250/cdn0.vox-cdn.com/uploads/chorus_image/image/50475579/jbareham_160815_1180_A_0014.0.0.jpg");
 }
 
-.entry_slot_list_content_wrapper {
+.slot_list_content {
     position: absolute;
     height: auto;
     width: auto;
@@ -689,7 +667,7 @@ body {
     left: 103px;
 }
 
-.entry_slot_list_content_2 strong {
+.entry_slot_list_author strong {
     display: inline-block;
     border-right: 1px solid #444;
     margin-right: .25rem;
@@ -712,11 +690,8 @@ body {
     word-wrap: break-word;
     width: 100%;
 }
-
-
 /*BACK TO TOP                        BACK TO TOP                          BACK TO TOP                          BACK TO TOP */
-
-.back_to_top {
+.to_top_link {
     width: 100%;
     height: 25px;
     padding: 18px 0 10px 0;
@@ -728,11 +703,8 @@ body {
     color: #FFF;
     text-align: center;
 }
-
-
 /*SEE NEWS                    SEE NEWS                     SEE NEWS              SEE NEWS         SEE NEWS    SEE NEWS*/
-
-.see_news_link {
+.news_link {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.75rem;
     text-transform: uppercase;
@@ -746,91 +718,73 @@ body {
     background: transparent;
     text-decoration: none;
 }
-
-
 /*FOOTER FOOOTER            FOOOTER          FOOOTER*/
 
-.bottom_footer {
+.footer {
     float: left;
     background-color: #000;
 }
-
 .search_products {
     width: 100%;
     height: 19px;
     padding: 18px 18px 18px 18px;
 }
-
 .search_form {
     width: 80%;
     height: 55px;
     padding: 27px 27px 18px 27px;
 }
-
-.left_items {
+.the_sections {
     float: left;
     height: 100%;
     background-color: #000;
 }
-
-.left_items li {
+.the_sections li {
     display: block;
     color: #444;
     font-size: 18px;
     width: 153px;
     height: 25px;
 }
-
-.right_items {
+.the_basics {
     display: inline-block;
     width: 35%;
     height: 100%;
     float: left;
     background-color: #000;
 }
-
-.right_items li {
+.the_basics li {
     display: block;
     color: #444;
     font-size: 18px;
     width: 180px;
     height: 25px;
 }
-
 .ul_items_wrapper {
     width: 100%;
     height: 340px;
 }
-
-.right_items_two {
+.the_else_where {
     display: none;
     width: 35%;
     height: 100%;
     float: left;
     background-color: #000;
 }
-
-.right_items_two li {
+.the_else_where li {
     display: block;
     color: #444;
     font-size: 18px;
     width: 180px;
     height: 25px;
 }
-
-#hidden_main_li_1,
-#hidden_main_li_2,
-#hidden_main_li_3 {
+.hidden_li{
     display: none;
 }
-
-#hidden_main_li_1 em,
-#hidden_main_li_2 em,
-#hidden_main_li_3 em {
+.hidden_li em{
     color: #fa4b2a;
 }
-
-.bottom_footer_verge_logo {
+.footer_verge_logo {
     display: none;
     background-color: black;
     width: 100%;
@@ -909,7 +863,7 @@ body {
     display: block;
 }
 
-.wrapper_footer_status_corner_wrapper_footer_caption_copy_rights {
+.wrapper_footer{
     width: 100%;
     height: auto;
 }
@@ -982,7 +936,7 @@ body {
     padding: 0;
 }
 
-.right_vertical_navbar_article_one_H3 {
+.right_vertical_navbar_caption {
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -1049,7 +1003,7 @@ body {
         border-right: 1px solid #ddd;
         position: relative;
     }
-    .entry_slot_list_content_wrapper {
+    .slot_list_content {
         position: absolute;
         margin-top: 0;
         top: -4%;
@@ -1073,7 +1027,7 @@ body {
         margin-top: 50%;
         margin-left: -14%;
     }
-    .entry_slot_list_content_1_H3 {
+    .entry_slot_list_caption {
         font-size: 25.5px;
     }
     #trending_now {
@@ -1088,11 +1042,11 @@ body {
 }
 
 @media only screen and (min-width: 500px) {
-    .right_items_two {
+    .the_else_where {
         display: inline-block;
         width: 23%;
     }
-    .right_items {
+    .the_basics {
         width: 23%
     }
     .social_networking_sites_plugins {
@@ -1101,34 +1055,32 @@ body {
 }
 
 @media only screen and (min-width: 600px) {
-    #hidden_main_li_1,
-    #hidden_main_li_2,
-    #hidden_main_li_3 {
+   .hidden_li{
         display: block;
     }
     .ul_items_wrapper_list ul li {
         display: block;
     }
-    .wrapper_bottom_footer_verge_logo_search_bar {
+    .footer_search_bar {
         width: 30%;
         float: left;
     }
-    .bottom_footer_verge_logo {
+    .footer_verge_logo {
         display: block;
         height: 48px;
     }
     .logosearch_bar {
         width: 100%;
     }
-    .right_items_two {
+    .the_else_where {
         display: inline-block;
         width: 19%;
         padding-left: 0px;
     }
-    .left_items {
+    .the_sections {
         width: 19%;
     }
-    .right_items {
+    .the_basics {
         display: inline-block;
         width: 19%;
         padding-left: 10px;
@@ -1138,12 +1090,12 @@ body {
         float: left;
         width: 50%;
     }
-    .wrapper_footer_caption_copy_rights {
+    .footer_copy_rights {
         display: inline-block;
         width: 47%;
         float: left;
     }
-    .image_scroll_second {
+    .image_scroll_repeat {
         height: 600px;
         overflow: hidden;
         width: 100%;
